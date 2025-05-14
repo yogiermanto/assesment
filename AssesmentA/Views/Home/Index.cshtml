@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var alertColor = TempData["alertColor"] as string;
+    var alertMessage = TempData["alertMessage"] as string;
+}
+
+<link rel="stylesheet" href="https://cdn.datatables.net/2.3.0/css/dataTables.bootstrap5.css">
+
+<div class="container">
+    <a asp-action="Create" class="btn btn-primary mb-3">Create</a>
+    @if (!string.IsNullOrEmpty(alertColor))
+    {
+        <div class="alert @alertColor alert-dismissible fade show" role="alert">
+            @alertMessage
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    <div class="table-responsive">
+        <table id="myTable" class="table table-striped table-hover table-bordered">
+            <thead class="table-light">
+            <tr>
+                <th>Id</th>
+                <th>Nama Barang</th>
+                <th>Kode Barang</th>
+                <th>Jumlah Barang</th>
+                <th>Tanggal</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdn.datatables.net/2.3.0/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.3.0/js/dataTables.bootstrap5.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable(
+                {
+                    ajax: {
+                        url: "Home/GetProdukList",
+                        type: "GET",
+                    },
+                    processing: true,
+                    serverSide: true,
+                    filter: true,
+                    paging: false,
+                    ordering: false,
+                    columns: [
+                        { data: "id", name: "Id" },
+                        { data: "namaBarang", name: "NamaBarang" },
+                        { data: "kodeBarang", name: "KodeBarang" },
+                        { data: "jumlahBarang", name: "JumlahBarang" },
+                        { data: "tanggal", name: "Tanggal" },
+                        {
+                            data: "id",
+                            render: function (id) {
+                                return `
+                                    <a href="Home/Update/${id}" class="btn btn-sm btn-warning">Update</a>
+                                    <a href="Home/Delete/${id}" class="btn btn-sm btn-danger">Delete</a>
+                                `
+                            }
+                        }
+                    ]
+                }
+            )
+        });
+    </script>
+}

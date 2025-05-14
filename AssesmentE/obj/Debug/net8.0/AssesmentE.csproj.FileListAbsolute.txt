@@ -1,0 +1,15 @@
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/bin/Debug/net8.0/AssesmentE
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/bin/Debug/net8.0/AssesmentE.deps.json
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/bin/Debug/net8.0/AssesmentE.runtimeconfig.json
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/bin/Debug/net8.0/AssesmentE.dll
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/bin/Debug/net8.0/AssesmentE.pdb
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/obj/Debug/net8.0/AssesmentE.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/obj/Debug/net8.0/AssesmentE.AssemblyInfoInputs.cache
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/obj/Debug/net8.0/AssesmentE.AssemblyInfo.cs
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/obj/Debug/net8.0/AssesmentE.csproj.CoreCompileInputs.cache
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/obj/Debug/net8.0/AssesmentE.sourcelink.json
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/obj/Debug/net8.0/AssesmentE.dll
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/obj/Debug/net8.0/refint/AssesmentE.dll
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/obj/Debug/net8.0/AssesmentE.pdb
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/obj/Debug/net8.0/AssesmentE.genruntimeconfig.cache
+/Users/yogiermanto/Desktop/Assesment/AssesmentE/obj/Debug/net8.0/ref/AssesmentE.dll
