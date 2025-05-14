@@ -1,0 +1,26 @@
+@model UpdateViewModel
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+<form asp-action="Update">
+    <input type="hidden" asp-for="Id">
+    <div class="mb-3">
+        <label asp-for="NamaBarang" class="form-label">Nama Barang</label>
+        <input asp-for="NamaBarang" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="KodeBarang" class="form-label">Kode Barang</label>
+        <input asp-for="KodeBarang" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="JumlahBarang" class="form-label">Jumlah Barang</label>
+        <input asp-for="JumlahBarang" type="number" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Tanggal" class="form-label">Tanggal</label>
+        <input asp-for="Tanggal" type="datetime-local" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
